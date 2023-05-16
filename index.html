@@ -5,8 +5,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock Paper Scissors</title>
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <header class="heading-container">
+      <h1>Rock Paper Scissors</h1>
+    </header>
+    <main class="body-container">
+      <div class="message">
+        <h3>The first to score 5 points will be the winner.</h3>
+      </div>
+      <!-- score container -->
+      <div class="scores-container section-center">
+        <div class="computer-score-container">
+          <h3>Computer Score:</h3>
+          <p class="score computer-score">0</p>
+        </div>
+        <div class="player-score-container">
+          <h3>Player Score:</h3>
+          <p class="score player-score">0</p>
+        </div>
+      </div>
+      <!-- end of score container -->
+      <!-- live message container -->
+      <div class="live-message section-center">
+        <div class="live-computer-message">
+          <p class="live-computer-result"></p>
+        </div>
+        <div class="live-player-message">
+          <p class="live-player-result"></p>
+        </div>
+      </div>
+      <!-- end of live message -->
+      <!-- live result -->
+      <div class="live-result">
+        <h3 class="live-text"></h3>
+      </div>
+      <!-- end of live result -->
+      <!-- select weapon -->
+      <div class="select-weapon">
+        <p class="chose-weapon">Choose your weapon</p>
+      </div>
+      <!-- weapons -->
+      <div class="weapons-container section-center">
+        <div class="weapon rock">
+          <span><i class="fa-solid fa-hand-back-fist"></i></span>
+          <p>Rock</p>
+        </div>
+        <div class="weapon paper">
+          <span><i class="fa-solid fa-hand"></i> </span>
+          <p>Paper</p>
+        </div>
+        <div class="weapon scissors">
+          <span><i class="fa-solid fa-hand-scissors"></i></span>
+          <p>Scissors</p>
+        </div>
+      </div>
+      <!-- end of weapons -->
+      <!-- result -->
+      <div class="result">
+        <h2 class="final-result-text"></h2>
+      </div>
+      <!-- end of result -->
+    </main>
     <!-- js -->
     <script src="script.js"></script>
   </body>

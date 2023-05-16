@@ -1,0 +1,149 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background: #6441a5; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #2a0845,
+    #6441a5
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #2a0845,
+    #6441a5
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.disabled {
+  pointer-events: none;
+}
+/* set width */
+.section-center {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.heading-container {
+  padding-top: 20px;
+  text-align: center;
+  color: #101820;
+}
+
+.heading-container > h1 {
+  /* font-size: 52px; */
+  text-decoration: underline;
+  text-decoration-color: #2a0845;
+}
+
+@media screen and (min-width: 992px) {
+  .heading-container > h1 {
+    font-size: 52px;
+  }
+}
+
+.body-container {
+  width: 90%;
+  min-height: 629px;
+  margin: 30px auto;
+  max-width: 700px;
+  background-color: #250f36;
+  padding: 40px 20px;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.message {
+  text-align: center;
+  /* color: rgb(180, 180, 131); */
+  color: #6441a5;
+  padding-bottom: 30px;
+}
+
+.scores-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+@media screen and (min-width: 620px) {
+  .scores-container {
+    justify-content: space-between;
+  }
+}
+.computer-score-container,
+.player-score-container {
+  border: 2px solid #6441a5;
+  border-radius: 8px;
+  padding: 10px;
+  color: #f0ab8d;
+}
+
+.scores-container * h3 {
+  font-size: 32px;
+  padding-bottom: 10px;
+}
+.score {
+  font-size: 56px;
+  font-weight: 700;
+  color: #a2c11c;
+}
+.live-message {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  font-size: 18px;
+  padding-bottom: 20px;
+  padding-inline: 5px;
+  color: #e0e0e0;
+}
+.live-result {
+  text-align: center;
+  padding-bottom: 20px;
+  font-size: 24px;
+  color: #8f59f3;
+}
+.select-weapon {
+  text-align: center;
+  padding-bottom: 20px;
+  color: #cca8e9;
+}
+.weapons-container {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 40px;
+}
+.weapon {
+  text-align: center;
+  border: 2px solid #945aff;
+  border-radius: 8px;
+  padding: 20px;
+  color: #fbf8be;
+  transition: all 0.3s;
+}
+.weapon span {
+  font-size: 40px;
+}
+@media screen and (min-width: 572px) {
+  .weapon span {
+    font-size: 56px;
+  }
+}
+.weapon:hover {
+  cursor: pointer;
+  background-color: #303031;
+}
+
+.result {
+  text-align: center;
+  font-size: 32px;
+  color: #0092ca;
+}
