@@ -147,3 +147,23 @@ body {
   font-size: 32px;
   color: #0092ca;
 }
+@media screen and (max-width: 568px) {
+  h1 {
+    font-size: 24px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  .scores-container * h3 {
+    font-size: 18px;
+  }
+  p {
+    font-size: 16px;
+  }
+  .weapon span {
+    font-size: 30px;
+  }
+}
